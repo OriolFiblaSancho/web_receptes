@@ -90,6 +90,13 @@
             margin-left: 10px;
             width: 20%;
         }
+
+        #addRecepta{
+            padding: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+            width: 20%;
+        }
     </style>
 </head>
 <body>
@@ -114,19 +121,8 @@
             </div>
             <button type="button" id="addPassos">+</button>
         </div>
-        <!-- <button type="submit">Afegir</button> -->
+        <button type="submit" id="addRecepta">Afegir recepta</button>
     </form>
-    <br>
-    <h3>Receptes:</h3>
-    <ul>
-        {% if receptes %}
-            {% for recepta in receptes %}
-                <li>{{ recepta }}: {{ receptes[recepta] }}</li>
-            {% endfor %}
-        {% else %}
-            <li>No hi ha receptes disponibles.</li>
-        {% endif %}
-    </ul>
 </body>
 <script>
     document.getElementById('addIngredients').addEventListener('click', function() {
