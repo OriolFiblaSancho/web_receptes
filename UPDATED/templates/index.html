@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de receptes</title>
+    <title>Pàgina de receptes</title>
     <style>
         * {
             box-sizing: border-box;
@@ -20,7 +20,6 @@
         h3{
             margin-top: 20px;
             font-size: 24px;
-
         }
         #form{
             display: flex;
@@ -49,7 +48,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-
         }
         #addIngredients{
             padding: 5px;
@@ -57,7 +55,6 @@
             margin-left: 10px;
             width: 10%;
         }
-        
         #ingredients{
             display: flex;
             flex-direction: column;
@@ -70,27 +67,23 @@
             align-items: center;
             margin-bottom: 10px;
         }
-     
         #passos{
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
         .passos{
             padding: 5px;
             margin-bottom: 10px;
             font-size: 16px;
             width: 150%;
         }
-
         #addPassos{
             padding: 5px;
             font-size: 16px;
             margin-left: 10px;
             width: 20%;
         }
-
         #addRecepta{
             padding: 5px;
             font-size: 16px;
@@ -121,6 +114,14 @@
             </div>
             <button type="button" id="addPassos">+</button>
         </div>
+
+        <!-- Aquí agregamos el campo de tipo -->
+        <select name="tipus" id="tipus" required>
+            <option value="Primer Plat">Primer Plat</option>
+            <option value="Segon Plat">Segon Plat</option>
+            <option value="Postres">Postres</option>
+        </select>
+
         <button type="submit" id="addRecepta">Afegir recepta</button>
     </form>
 </body>
@@ -158,6 +159,5 @@
 
         passos.appendChild(newPasso);
     });
-    
 </script>
 </html>
