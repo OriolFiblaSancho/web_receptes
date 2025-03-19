@@ -33,15 +33,15 @@ class Postres(Recepta):
 
 def llegir_receptes():
     try:
-        with open('receptes.json', 'r', encoding="utf-8") as f:
+        with open('receptes.json', 'r') as f:
             return json.load(f)
     except FileNotFoundError:
         return []  
 
 
 def desar_receptes(receptes):
-    with open('receptes.json', 'w', encoding="utf-8") as f:
-        json.dump(receptes, f, indent=4, ensure_ascii=False)
+    with open('receptes.json', 'w') as f:
+        json.dump(receptes, f, indent=4)
 
 
 @main.route('/', methods=['GET', 'POST'])
