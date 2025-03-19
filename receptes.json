@@ -1,0 +1,36 @@
+[
+    {
+        "nom": "",
+        "ingredients": [
+            {
+                "ingredient": "Pollo",
+                "quantitat": "20g"
+            },
+            {
+                "ingredient": "Huevo",
+                "quantitat": ""
+            }
+        ],
+        "passos": [
+            "Cocinar"
+        ],
+        "tipus": "Primer Plat"
+    },
+    {
+        "nom": "",
+        "ingredients": [
+            {
+                "ingredient": "Pollo",
+                "quantitat": "20g"
+            },
+            {
+                "ingredient": "Huevo",
+                "quantitat": ""
+            }
+        ],
+        "passos": [
+            "Cocinar"
+        ],
+        "tipus": "Primer Plat"
+    }
+]
