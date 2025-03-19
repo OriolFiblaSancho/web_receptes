@@ -1,50 +1,9 @@
-from flask import Flask, render_template, request, redirect, url_for
-import json
+from flask import Flask, render_template, request
 
-main = Flask(__name__)
+app = Flask(__name__)
+receptes = {}
 
-class Recepta:
-    def __init__(self, nom, ingredients, passos, tipus):
-        self.nom = nom
-        self.ingredients = ingredients if ingredients else []
-        self.passos = passos if passos else []
-        self.tipus = tipus
-
-    def to_dict(self):
-        return {
-            'nom': self.nom,
-            'ingredients': self.ingredients,
-            'passos': self.passos,
-            'tipus': self.tipus
-        }
-
-class PrimerPlat(Recepta):
-    def __init__(self, nom, ingredients, passos):
-        super().__init__(nom, ingredients, passos, "Primer Plat")
-
-class SegonPlat(Recepta):
-    def __init__(self, nom, ingredients, passos):
-        super().__init__(nom, ingredients, passos, "Segon Plat")
-
-class Postres(Recepta):
-    def __init__(self, nom, ingredients, passos):
-        super().__init__(nom, ingredients, passos, "Postres")
-
-
-def llegir_receptes():
-    try:
-        with open('receptes.json', 'r', encoding="utf-8") as f:
-            return json.load(f)
-    except FileNotFoundError:
-        return []  
-
-
-def desar_receptes(receptes):
-    with open('receptes.json', 'w', encoding="utf-8") as f:
-        json.dump(receptes, f, indent=4, ensure_ascii=False)
-
-
-@main.route('/', methods=['GET', 'POST'])
+@app.route('/',methods=['GET', 'POST'])
 def index():
     receptes = llegir_receptes()  
 
@@ -75,4 +34,7 @@ def index():
 
 
 if __name__ == '__main__':
-    main.run(debug=True, port=5000)
+    	app.run(debug=True)
+
+#cOMENT
+
