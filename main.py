@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 import json
 
 main = Flask(__name__)
@@ -9,6 +9,12 @@ class Recepta:
         self.ingredients = ingredients if ingredients else []
         self.passos = passos if passos else []
         self.tipus = tipus
+class Usuari:
+    def __init__(self,nom,cognom,gmail):
+        self.nom = nom
+        self.cognom = cognom
+        self.gmail = gmail
+        
 #Polimorfisme
     def to_dict(self):
         return {
