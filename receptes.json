@@ -1,55 +1,53 @@
 [
     {
-<<<<<<< HEAD
-        "nom": "",
+        "nom": "Mici",
         "ingredients": [
             {
-                "ingredient": "Pollo",
-                "quantitat": "20g"
+                "ingredient": "Carn de porc",
+                "quantitat": "500G"
             },
             {
-                "ingredient": "Huevo",
+                "ingredient": "Carn de ternera",
+                "quantitat": "500G"
+            },
+            {
+                "ingredient": "Aigua en gas",
+                "quantitat": "20ml"
+            },
+            {
+                "ingredient": "Sal, pimienta",
                 "quantitat": ""
             }
         ],
         "passos": [
-            "Cocinar"
+            "Barrejar tot"
         ],
         "tipus": "Primer Plat"
     },
     {
-        "nom": "",
+        "nom": "Macarrons",
         "ingredients": [
             {
-                "ingredient": "Pollo",
-                "quantitat": "20g"
-            },
-            {
-                "ingredient": "Huevo",
-                "quantitat": ""
+                "ingredient": "Macarrons",
+                "quantitat": "250G"
             }
         ],
         "passos": [
-            "Cocinar"
+            "Bullir els macarrons"
         ],
         "tipus": "Primer Plat"
-=======
-        "nom": "Pollo asado",
+    },
+    {
+        "nom": "Brownie",
         "ingredients": [
             {
-                "ingredient": "Pollo",
-                "quantitat": "40G"
-            },
-            {
-                "ingredient": "Huevo",
-                "quantitat": "20g"
+                "ingredient": "Chocolate",
+                "quantitat": "2"
             }
         ],
         "passos": [
-            "Cocinar",
-            "Cocinar a fuego lento"
+            "Barrejar tot"
         ],
-        "tipus": "Segon Plat"
->>>>>>> 904e2a66d17829065a26cbeaa3ba2213f525f277
+        "tipus": "Postres"
     }
 ]
