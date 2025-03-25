@@ -23,31 +23,5 @@
             "Barrejar tot"
         ],
         "tipus": "Primer Plat"
-    },
-    {
-        "nom": "Macarrons",
-        "ingredients": [
-            {
-                "ingredient": "Macarrons",
-                "quantitat": "250G"
-            }
-        ],
-        "passos": [
-            "Bullir els macarrons"
-        ],
-        "tipus": "Primer Plat"
-    },
-    {
-        "nom": "Brownie",
-        "ingredients": [
-            {
-                "ingredient": "Chocolate",
-                "quantitat": "2"
-            }
-        ],
-        "passos": [
-            "Barrejar tot"
-        ],
-        "tipus": "Postres"
     }
 ]
